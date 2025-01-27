@@ -13,6 +13,9 @@
             margin: 0;
             padding: 0;
             background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .hero-section {
@@ -34,7 +37,7 @@
             font-size: 1.2rem;
             margin: 12px;
             opacity: 0;
-            animation: fadeInUp 2s 0.5s forwards; /* Delay untuk animasi teks */
+            animation: fadeInUp 2s 0.5s forwards;
         }
 
         .btn-custom {
@@ -47,7 +50,7 @@
             margin: 1px 0;
             width: 100%;
             opacity: 0;
-            animation: fadeInUp 2s 1s forwards; /* Delay untuk animasi tombol */
+            animation: fadeInUp 2s 1s forwards;
         }
 
         .btn-custom:hover {
@@ -58,16 +61,7 @@
         .content-section {
             padding: 60px 0;
             text-align: center;
-        }
-
-        .content-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .content-section p {
-            font-size: 1.1rem;
-            margin-bottom: 40px;
+            flex-grow: 1; /* Membuat konten mengisi ruang yang ada */
         }
 
         .footer {
@@ -108,7 +102,7 @@
     <!-- Hero Section -->
     <div class="hero-section">
         <h1>Lomba Lintas Alam Bumi Reog 2025</h1>
-        <p>Segala jenis informasi terkait teknis lomba bisa dilihat dibawah ini</p>
+        <p>Segala jenis informasi terkait teknis lomba bisa dilihat di bawah ini</p>
     </div>
 
     <!-- Content Section -->
